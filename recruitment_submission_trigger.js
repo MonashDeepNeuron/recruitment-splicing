@@ -28,20 +28,20 @@ class BranchMetadata {
 const metadata = {
     "Common": new BranchMetadata("Common", 6, 25),
     "AI": new BranchMetadata("AI", 32, 39, 4),
-    "HPC": new BranchMetadata("HPC", 40, 46, 5),
+    "HPC": new BranchMetadata("HPC", 40, 47, 5),
     "Marketing, Design and Publications": new BranchMetadata(
         "Marketing",
-        47,
-        54,
+        48,
+        55,
         6
     ),
-    "Industry Team": new BranchMetadata("Industry", 55, 57, 7),
-    "Events Team": new BranchMetadata("Events", 62, 67, 8),
-    "People and Culture Officer": new BranchMetadata("P&C", 68, 71, 9),
-    "Law & Ethics Committee Member": new BranchMetadata("L&E", 26, 31, 10),
-    "Outreach Team": new BranchMetadata("Outreach", 58, 61, 11),
-    "Training Team": new BranchMetadata("Training", 72, 76, 12),
-    "Branch Switch Indexes": [25, 31, 39, 46, 54, 57, 61, 67, 71, 76],
+    "Industry Team": new BranchMetadata("Industry", 56, 58, 7),
+    "Events Team": new BranchMetadata("Events", 63, 68, 8),
+    "People and Culture Officer": new BranchMetadata("P&C", 69, 73, 9),
+    "Law & Ethics Committee": new BranchMetadata("L&E", 26, 31, 10),
+    "Outreach Team": new BranchMetadata("Outreach", 59, 62, 11),
+    "Training Team": new BranchMetadata("Training", 74, 79, 12),
+    "Branch Switch Indexes": [25, 31, 39, 47, 55, 58, 62, 68, 73, 79],
     "Unique Count Cell": "A4",
 };
 
@@ -274,7 +274,7 @@ function recruitment_application_submit_trigger(e) {
 
     // Response that fired the trigger
     const responses = response_sheet
-        .getRange(`A${latest_row}:BZ${latest_row}`)
+        .getRange(`A${latest_row}:CB${latest_row}`)
         .getValues()[0]
         .map(transform_response);
 
