@@ -8,7 +8,7 @@ This script is used as a 'Trigger' service that sorts the responses an applicant
 
 You can simply copy the main scripts (`recruitment_submission_trigger.js`) contents into your own forms AppScript project as it's own `*.gs` file. You will also need the `appsscript.json` file to allow the proper OAuth rights. You can then add the script as a 'Trigger' for the forms on-submit request. Documentation can be found here:
 
-- [INstallable Triggers](https://developers.google.com/apps-script/guides/triggers/installable)
+- [Installable Triggers](https://developers.google.com/apps-script/guides/triggers/installable)
 - [on-submit 'installable' trigger](https://developers.google.com/apps-script/guides/triggers/events#google_forms_events:~:text=to%20modify%20it.-,Form%20submit,-(installable))
 
 ## Contributing and Labelling
